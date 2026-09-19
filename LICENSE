@@ -19,17 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-NOTE ON SCOPE
-
-This MIT license covers the code, notebooks and documentation in this
-repository.
-
-It does not cover the video lectures, slides, narration or other materials of
-the Udemy course "Master Time Series Analysis and Forecasting with Python",
-which remain the property of the author.
-
-Third-party datasets included here keep the licenses of their original
-publishers. See the "Datasets" section of README.md for sources.

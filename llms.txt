@@ -12,6 +12,13 @@ Author: Diogo Alves de Resende, data and AI instructor with more than 77,000 stu
 
 License: MIT for the code and notebooks. The video course itself is separate.
 
+## Read the notebooks as web pages
+
+Every notebook is rendered as plain HTML at
+https://diogoalvesderesende.github.io/time-series-forecasting-python/ — the canonical, crawlable
+home for this content. The index page carries schema.org Course metadata, and the full page list
+is at https://diogoalvesderesende.github.io/time-series-forecasting-python/sitemap.xml
+
 ## Start here
 
 - [README](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/README.md): what the repo is, the course numbers, the model table, quick start and FAQ
@@ -25,6 +32,13 @@ License: MIT for the code and notebooks. The video course itself is separate.
 - [Part 2 — Modern Time Series Forecasting Techniques](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Modern%20Time%20Series%20Forecasting%20Techniques): Prophet with holidays and tuning, a Prophet capstone, intermittent demand forecasting, LinkedIn Silverkite
 - [Part 3 — Deep Learning for Time Series Forecasting](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Deep%20Learning%20for%20Time%20Series%20Forecasting): LSTM on one series and on many, Temporal Fusion Transformer with covariates, a multi-series TFT capstone, N-BEATS — all built on the Darts library
 - [Part 4 — Advanced Content for Time Series](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Advanced%20Content%20for%20Time%20Series): Amazon Chronos and Chronos 2 zero-shot forecasting, Amazon AutoGluon AutoML, Google TSMixer univariate and multivariate, InceptionTime classification, and a final project building an automated forecasting pipeline
+
+## Running the notebooks
+
+Every notebook opens in Google Colab with one click and runs top to bottom. Its first cell finds
+its data automatically: Google Drive if the course folder is there, the notebook's own folder on a
+local clone, otherwise downloading that section's data from the repository. Library versions are
+pinned in each cell to match the section's requirements.txt.
 
 ## Optional
 

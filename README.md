@@ -10,7 +10,7 @@
 [![Last updated](https://img.shields.io/badge/updated-September%202026-brightgreen)](#update-history)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-👉 **[Take the full course on Udemy](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**
+👉 **[Take the full course on Udemy](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**  ·  📖 **[Read the notebooks online](https://diogoalvesderesende.github.io/time-series-forecasting-python/)**
 
 ---
 
@@ -115,17 +115,23 @@ The 2025 and 2026 material. Foundation models and AutoML.
 
 ### Option 1 — Google Colab (recommended)
 
-Nothing to install. GPU included.
+Nothing to install. GPU included. **Click the Colab badge at the top of any notebook and run it.**
 
-1. Open [Google Colab](https://colab.research.google.com/)
-2. `File → Open notebook → GitHub`
-3. Paste `https://github.com/diogoalvesderesende/time-series-forecasting-python`
-4. Pick a notebook
-5. Upload the CSV files from the same folder, or mount Google Drive
+Every notebook opens and runs top to bottom without setup. The first cell mounts Drive if you
+have the course folder there, otherwise it downloads that section's data from this repository.
+Nothing to upload, no paths to edit.
+
+A full index with a badge per notebook is in [CURRICULUM.md](CURRICULUM.md#every-notebook-one-click).
 
 For the deep learning notebooks, turn the GPU on first: `Runtime → Change runtime type → T4 GPU`.
 
-### Option 2 — Local
+### Option 2 — Read it as a web page
+
+Every notebook is also rendered at
+**[diogoalvesderesende.github.io/time-series-forecasting-python](https://diogoalvesderesende.github.io/time-series-forecasting-python/)**,
+including the large ones GitHub will not preview. No Colab, no clone.
+
+### Option 3 — Local
 
 ```bash
 git clone https://github.com/diogoalvesderesende/time-series-forecasting-python.git
@@ -245,7 +251,7 @@ Found a bug, a broken path, or a library that moved on? [Open an issue](https://
 
 Code and notebooks: [MIT](LICENSE).
 
-The video course, slides and narration are not covered by this license and remain the property of the author.
+The video course, slides and narration are not covered by this license and remain the property of the author. Dataset credits and the full scope note are in [NOTICE.md](NOTICE.md).
 
 ---
 

@@ -40,3 +40,6 @@ desktop.ini
 .env
 *.key
 kaggle.json
+
+# --- Generated site (built in CI, published to GitHub Pages) ---
+site/

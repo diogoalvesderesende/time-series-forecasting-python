@@ -13,34 +13,28 @@ If you are not sure, use Colab. That is what the course uses.
 
 ### Open a notebook
 
-1. Go to [colab.research.google.com](https://colab.research.google.com/)
-2. `File → Open notebook → GitHub`
-3. Paste: `https://github.com/diogoalvesderesende/time-series-forecasting-python`
-4. Pick the notebook you want
+Click the **Open in Colab** badge at the top of any notebook. That is the whole procedure.
 
-### Get the data in
+The full index with a badge per notebook is in
+[CURRICULUM.md](CURRICULUM.md#every-notebook-one-click).
 
-Most notebooks read a CSV sitting next to them, for example `pd.read_csv('electricity.csv')`. Colab does not see your GitHub folder, so you have to put the file there yourself. Two options.
+If you would rather browse from inside Colab: `File → Open notebook → GitHub`, then paste
+`https://github.com/diogoalvesderesende/time-series-forecasting-python`.
 
-**Upload it** (fastest for one file):
+### The data takes care of itself
 
-```python
-from google.colab import files
-files.upload()
-```
+Nothing to upload. The first cell of every notebook works out where its data is:
 
-**Pull it straight from GitHub** (better, nothing to click):
+1. **Google Drive**, if you copied the course folder there. This is what the videos show.
+2. **The notebook's own folder**, if you cloned the repository.
+3. **Downloaded from this repository**, if neither of the above.
 
-```python
-import urllib.parse, urllib.request
+Colab's GitHub opener only downloads the `.ipynb` file itself, never the CSVs sitting beside it,
+so case 3 is what fires when you click a badge. You will see a short `Downloading ...` line and
+then the working directory, and the rest of the notebook runs normally.
 
-RAW = "https://raw.githubusercontent.com/diogoalvesderesende/time-series-forecasting-python/main/"
-path = "Deep Learning for Time Series Forecasting/TFT/electricity.csv"
-
-urllib.request.urlretrieve(RAW + urllib.parse.quote(path), path.split("/")[-1])
-```
-
-The `quote` matters. The folder names have spaces in them.
+One exception worth knowing about: the Python labs use a 36 MB retail file, so their first cell
+takes a few seconds longer than the others.
 
 ### Turn the GPU on
 
@@ -59,13 +53,12 @@ print(torch.cuda.is_available())
 
 ### Install the libraries
 
-Each folder has a `requirements.txt`. In Colab:
+Each notebook installs what it needs, pinned to the same version as its folder's
+`requirements.txt`. You do not have to do anything.
 
-```python
-!pip install -q -r requirements.txt
-```
-
-Then **restart the runtime** (`Runtime → Restart session`) before you run the rest. Colab preloads older versions of `numpy` and `pandas`, and they only get swapped out after a restart.
+If a later cell then complains about a version, restart the runtime
+(`Runtime → Restart session`) and run again. Colab preloads its own `numpy` and `pandas`, and
+they are only swapped out after a restart.
 
 ---
 
@@ -84,7 +77,7 @@ Then **restart the runtime** (`Runtime → Restart session`) before you run the 
 git clone https://github.com/diogoalvesderesende/time-series-forecasting-python.git
 ```
 
-The repo is around 155 MB, mostly datasets. Give it a minute.
+The repo is around 100 MB, mostly datasets. Give it a minute.
 
 ### One environment per section
 
@@ -176,7 +169,9 @@ Restart the runtime. Colab caches the old version in memory.
 The Darts API moved. Check the pinned version in that folder's `requirements.txt` against what you have installed.
 
 **A notebook will not open on github.com.**
-`LSTM - Multiple Series.ipynb` is over GitHub's 5 MB render limit. Open it in Colab or clone the repo and open it locally.
+Every notebook is now under GitHub's 5 MB preview limit, so this should not happen. If it does,
+read it on the [companion site](https://diogoalvesderesende.github.io/time-series-forecasting-python/)
+instead, which renders all of them.
 
 **`AutogluonModels/` reappears and is not in git.**
 Correct. It is generated when you run the AutoGluon notebook, and it is in `.gitignore`. Delete it freely.
