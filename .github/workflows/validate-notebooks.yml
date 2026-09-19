@@ -1,0 +1,76 @@
+name: Validate notebooks
+
+# Notebooks are not executed here. Running them needs GPUs and conflicting
+# environments. This job only checks that every .ipynb is structurally valid
+# and that the requirements files parse, so a broken file never sits in main.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install validators
+        run: pip install nbformat packaging
+
+      - name: Check every notebook parses
+        run: |
+          python - <<'PY'
+          import pathlib, sys, nbformat
+
+          failures = []
+          notebooks = sorted(pathlib.Path(".").rglob("*.ipynb"))
+          notebooks = [n for n in notebooks if ".ipynb_checkpoints" not in n.parts]
+
+          for nb_path in notebooks:
+              try:
+                  nb = nbformat.read(nb_path, as_version=4)
+                  nbformat.validate(nb)
+              except Exception as exc:
+                  failures.append(f"{nb_path}: {exc}")
+
+          print(f"Checked {len(notebooks)} notebooks")
+          for failure in failures:
+              print(f"FAIL {failure}")
+          sys.exit(1 if failures else 0)
+          PY
+
+      - name: Check every requirements.txt parses
+        run: |
+          python - <<'PY'
+          import pathlib, sys
+          from packaging.requirements import Requirement
+
+          failures = []
+          files = sorted(pathlib.Path(".").rglob("requirements.txt"))
+
+          for req_file in files:
+              for lineno, raw in enumerate(req_file.read_text().splitlines(), 1):
+                  line = raw.split("#")[0].strip()
+                  if not line:
+                      continue
+                  try:
+                      Requirement(line)
+                  except Exception as exc:
+                      failures.append(f"{req_file}:{lineno}: {line!r} -> {exc}")
+
+          print(f"Checked {len(files)} requirements files")
+          for failure in failures:
+              print(f"FAIL {failure}")
+          sys.exit(1 if failures else 0)
+          PY
+
+      - name: Warn on files GitHub will not render
+        run: |
+          echo "Notebooks over GitHub's 5 MB preview limit:"
+          find . -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -size +5M -printf "  %p (%kk)\n" || true

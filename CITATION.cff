@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: >-
+  Master Time Series Analysis and Forecasting with Python — Course Notebooks
+message: >-
+  If you use these notebooks in your work or teaching, please cite them
+  and link back to the course.
+type: software
+authors:
+  - given-names: Diogo
+    family-names: Alves de Resende
+    affiliation: The Data Hero
+repository-code: >-
+  https://github.com/diogoalvesderesende/time-series-forecasting-python
+url: https://www.udemy.com/course/forecasting-python/
+abstract: >-
+  Companion notebooks for the Udemy course "Master Time Series Analysis and
+  Forecasting with Python". Covers exponential smoothing and Holt-Winters,
+  ARIMA, SARIMA and SARIMAX, Prophet, intermittent demand, LinkedIn
+  Silverkite, LSTM, Temporal Fusion Transformers, N-BEATS, Amazon Chronos and
+  Chronos 2, Amazon AutoGluon, Google TSMixer, and InceptionTime for time
+  series classification. Includes starter files, completed notebooks,
+  capstone projects and datasets.
+keywords:
+  - time series
+  - forecasting
+  - python
+  - demand forecasting
+  - ARIMA
+  - SARIMAX
+  - Prophet
+  - Holt-Winters
+  - LSTM
+  - Temporal Fusion Transformer
+  - N-BEATS
+  - Amazon Chronos
+  - AutoGluon
+  - TSMixer
+  - Darts
+  - foundation models
+  - machine learning
+license: MIT

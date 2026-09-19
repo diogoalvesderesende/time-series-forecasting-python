@@ -1,0 +1,6 @@
+pandas==2.2.2
+matplotlib==3.10.0
+numpy==2.0.2
+statsmodels==0.14.6
+scikit-learn==1.6.1
+darts==0.45.0

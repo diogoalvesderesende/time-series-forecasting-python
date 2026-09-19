@@ -1,0 +1,21 @@
+# Normalise text files, leave binaries alone
+* text=auto eol=lf
+
+# Notebooks are text but should not be diffed as prose
+*.ipynb text eol=lf
+
+# Binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.zip binary
+*.pkl binary
+*.pt binary
+*.bin binary
+*.safetensors binary
+
+# Keep GitHub language stats about the notebooks, not the data
+# Leave data files byte-identical, do not touch their line endings
+*.csv -text linguist-detectable=false
+*.xlsx linguist-detectable=false
+*.ipynb linguist-documentation=false

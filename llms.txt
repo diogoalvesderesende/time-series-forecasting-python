@@ -1,0 +1,40 @@
+# Master Time Series Analysis and Forecasting with Python
+
+> Companion code repository for the Udemy course "Master Time Series Analysis and Forecasting with Python" by Diogo Alves de Resende. Rated 4.3 out of 5 from 1,545 reviews, with 13,693 students enrolled. 39 sections, 397 lectures, 38 hours 14 minutes of video, last updated September 2026. The repository contains every Jupyter notebook, starter file, dataset and capstone project from the course, covering classical statistical forecasting through deep learning and time series foundation models in Python.
+
+The course teaches time series forecasting in Python from first principles to state of the art. It is beginner friendly and assumes only basic statistics. Each section follows the same arc: explore the data, fit the model, cross-validate, tune parameters, then forecast the future. Most sections ship a "Starter File" for coding along with the lecture and a completed notebook with all outputs.
+
+Models covered, in course order: Simple Exponential Smoothing, Holt's linear trend, Holt-Winters seasonal; ARIMA, SARIMA, SARIMAX; Facebook Prophet; intermittent demand methods for sparse, zero-heavy series; LinkedIn Silverkite via Greykite; LSTM recurrent networks for single and multiple series; Temporal Fusion Transformer (TFT); N-BEATS; Amazon Chronos and Chronos 2 foundation models for zero-shot forecasting; Amazon AutoGluon for automated ensembling; Google TSMixer for univariate and multivariate forecasting; InceptionTime for time series classification.
+
+Libraries used: statsmodels, scikit-learn, pandas, numpy, matplotlib, prophet, statsforecast, greykite, darts, torch, autogluon.timeseries, chronos-forecasting, sktime, tsdb.
+
+Author: Diogo Alves de Resende, data and AI instructor with more than 77,000 students, founder of The Data Hero, formerly in analytics leadership in Berlin working on revenue planning at scale.
+
+License: MIT for the code and notebooks. The video course itself is separate.
+
+## Start here
+
+- [README](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/README.md): what the repo is, the course numbers, the model table, quick start and FAQ
+- [Curriculum](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/CURRICULUM.md): all 39 course sections mapped to the notebooks, datasets and PDFs that go with them
+- [Setup](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/SETUP.md): Google Colab and local install, per-section environments, GPU setup, known install problems
+- [Changelog](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/CHANGELOG.md): nine documented course updates from August 2024 to August 2026
+
+## Course sections in this repository
+
+- [Part 1 — Time Series Analysis](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Time%20Series%20Analysis): datetime indexing, exploratory analysis, decomposition, ACF and PACF, stationarity, exponential smoothing, Holt-Winters, ARIMA, SARIMA, SARIMAX, plus a Holt-Winters capstone on air miles data
+- [Part 2 — Modern Time Series Forecasting Techniques](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Modern%20Time%20Series%20Forecasting%20Techniques): Prophet with holidays and tuning, a Prophet capstone, intermittent demand forecasting, LinkedIn Silverkite
+- [Part 3 — Deep Learning for Time Series Forecasting](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Deep%20Learning%20for%20Time%20Series%20Forecasting): LSTM on one series and on many, Temporal Fusion Transformer with covariates, a multi-series TFT capstone, N-BEATS — all built on the Darts library
+- [Part 4 — Advanced Content for Time Series](https://github.com/diogoalvesderesende/time-series-forecasting-python/tree/main/Advanced%20Content%20for%20Time%20Series): Amazon Chronos and Chronos 2 zero-shot forecasting, Amazon AutoGluon AutoML, Google TSMixer univariate and multivariate, InceptionTime classification, and a final project building an automated forecasting pipeline
+
+## Optional
+
+- [Useful Code Template](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/Useful%20Code%20%20Template.ipynb): reusable blocks for setup, visualisation, seasonality, model assessment and forecasting forward
+- [Contributing](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/CONTRIBUTING.md): how to report a broken notebook or a library version conflict
+- [Citation metadata](https://github.com/diogoalvesderesende/time-series-forecasting-python/blob/main/CITATION.cff): machine-readable citation for the repository
+
+## Links
+
+- [Full course on Udemy](https://www.udemy.com/course/forecasting-python/)
+- [All courses by Diogo Alves de Resende](https://www.udemy.com/user/diogo-resende-2/)
+- [The Data Hero](https://thedatahero.com/)
+- [Newsletter](https://data-heroes-2.kit.com/)

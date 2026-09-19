@@ -1,0 +1,8 @@
+pandas==2.2.2
+numpy==2.0.2
+matplotlib==3.10.0
+statsmodels==0.14.6
+scikit-learn==1.6.1
+prophet==1.3.0
+plotly==5.24.1
+cmdstanpy==1.3.0

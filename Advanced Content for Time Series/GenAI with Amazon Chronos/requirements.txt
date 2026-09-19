@@ -1,0 +1,17 @@
+# --- Core forecasting libraries ---
+chronos-forecasting @ git+https://github.com/amazon-science/chronos-forecasting.git@6a9c8dadac04eb85befc935043e3e2cce914267f
+tsdb==0.7.1
+
+# --- Deep‑learning backend ---
+torch==2.6.0
+
+# --- Data wrangling & maths ---
+pandas==2.2.2
+numpy==2.0.2
+
+# --- Statistics & modelling helpers ---
+statsmodels==0.14.5
+scikit-learn==1.6.1     # provides ParameterGrid & metrics
+
+# --- Visualisation ---
+matplotlib==3.10.0

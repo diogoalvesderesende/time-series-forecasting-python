@@ -1,0 +1,42 @@
+# --- Generated model artifacts (re-created when you run the notebooks) ---
+AutogluonModels/
+lightning_logs/
+checkpoints/
+*.ckpt
+darts_logs/
+.darts/
+mlruns/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.virtual_documents/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints
+
+# --- Caches ---
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+~/.cache/tsdb/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# --- Secrets ---
+.env
+*.key
+kaggle.json

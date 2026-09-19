@@ -1,0 +1,8 @@
+absl-py==1.4.0
+matplotlib==3.10.0
+numpy==2.0.2
+pandas==2.2.2
+scikit-learn==1.6.1
+scipy==1.16.1
+seaborn==0.13.2
+sktime==1.0.1

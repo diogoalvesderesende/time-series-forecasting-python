@@ -1,0 +1,13 @@
+# Core forecasting toolkit
+autogluon==1.3.1
+
+# Data handling and numerical computing
+pandas==2.2.2
+numpy==2.0.2
+
+# Visualisation
+matplotlib==3.10.0
+
+# ML back-end dependencies
+scikit-learn==1.6.1
+torch==2.2.2  # GPU/CPU wheel is picked automatically for your system
