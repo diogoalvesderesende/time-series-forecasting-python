@@ -36,13 +36,31 @@ STATS = [("4.3", "rating", GOLD), ("1,545", "reviews", FG),
          ("13,693", "students", FG), ("62", "notebooks", FG)]
 
 
-def font(name: str, size: int):
-    for candidate in (name, f"C:/Windows/Fonts/{name}"):
+# Windows has Segoe UI, CI runners have DejaVu. Falling through to PIL's default
+# bitmap font produces an unreadable card, so try hard before giving up.
+FONTS = {
+    "bold": ["seguisb.ttf", "C:/Windows/Fonts/seguisb.ttf",
+             "arialbd.ttf", "C:/Windows/Fonts/arialbd.ttf",
+             "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+             "DejaVuSans-Bold.ttf",
+             "/System/Library/Fonts/Supplemental/Arial Bold.ttf"],
+    "regular": ["segoeui.ttf", "C:/Windows/Fonts/segoeui.ttf",
+                "arial.ttf", "C:/Windows/Fonts/arial.ttf",
+                "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+                "DejaVuSans.ttf",
+                "/System/Library/Fonts/Supplemental/Arial.ttf"],
+}
+
+
+def font(weight: str, size: int):
+    for candidate in FONTS[weight]:
         try:
             return ImageFont.truetype(candidate, size)
         except OSError:
             continue
-    return ImageFont.load_default()
+    raise SystemExit(
+        f"No usable {weight} TrueType font found. Install DejaVu "
+        "(fonts-dejavu-core) or run this on a machine with Segoe UI or Arial.")
 
 
 def star(d, cx, cy, r, fill):
@@ -65,12 +83,12 @@ def main() -> None:
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
 
-    f_title = font("seguisb.ttf", 66)
-    f_sub = font("segoeui.ttf", 28)
-    f_stat = font("seguisb.ttf", 34)
-    f_label = font("segoeui.ttf", 20)
-    f_chip = font("segoeui.ttf", 21)
-    f_foot = font("segoeui.ttf", 22)
+    f_title = font("bold", 62)
+    f_sub = font("regular", 27)
+    f_stat = font("bold", 33)
+    f_label = font("regular", 20)
+    f_chip = font("regular", 20)
+    f_foot = font("regular", 21)
 
     # accent bar down the left edge
     d.rectangle([0, 0, 10, H], fill=ACCENT)
