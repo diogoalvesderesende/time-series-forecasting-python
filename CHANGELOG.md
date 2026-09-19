@@ -56,4 +56,4 @@ The course is maintained. New models get added as they are released.
 
 ---
 
-Course link: https://www.udemy.com/course/forecasting-python/
+Course link: https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A

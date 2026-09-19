@@ -1,6 +1,6 @@
 # Curriculum
 
-Full map of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)** — 39 sections, 397 lectures, 38h 14m of video — and the notebook in this repository that goes with each one.
+Full map of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)** — 39 sections, 397 lectures, 38h 14m of video — and the notebook in this repository that goes with each one.
 
 Sections marked *video only* have no code files. They are introductions, feedback prompts or archived material.
 
@@ -246,4 +246,4 @@ Bundled with the course as a full Python primer for anyone who needs it. Video o
 
 ---
 
-**[Take the full course on Udemy →](https://www.udemy.com/course/forecasting-python/)**
+**[Take the full course on Udemy →](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**

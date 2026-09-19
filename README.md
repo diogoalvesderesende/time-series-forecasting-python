@@ -2,21 +2,21 @@
 
 **Every notebook, dataset and starter file from the Udemy course — in one repository.**
 
-[![Course rating](https://img.shields.io/badge/rating-4.3%20%E2%98%85-f6b100)](https://www.udemy.com/course/forecasting-python/)
-[![Reviews](https://img.shields.io/badge/reviews-1%2C545-blue)](https://www.udemy.com/course/forecasting-python/)
-[![Students](https://img.shields.io/badge/students-13%2C693-blue)](https://www.udemy.com/course/forecasting-python/)
-[![Lectures](https://img.shields.io/badge/lectures-397-555)](https://www.udemy.com/course/forecasting-python/)
-[![Runtime](https://img.shields.io/badge/video-38h%2014m-555)](https://www.udemy.com/course/forecasting-python/)
+[![Course rating](https://img.shields.io/badge/rating-4.3%20%E2%98%85-f6b100)](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
+[![Reviews](https://img.shields.io/badge/reviews-1%2C545-blue)](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
+[![Students](https://img.shields.io/badge/students-13%2C693-blue)](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
+[![Lectures](https://img.shields.io/badge/lectures-397-555)](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
+[![Runtime](https://img.shields.io/badge/video-38h%2014m-555)](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
 [![Last updated](https://img.shields.io/badge/updated-September%202026-brightgreen)](#update-history)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-👉 **[Take the full course on Udemy](https://www.udemy.com/course/forecasting-python/)**
+👉 **[Take the full course on Udemy](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**
 
 ---
 
 ## What this is
 
-This is the code repository for **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)**, taught by Diogo Alves de Resende.
+This is the code repository for **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**, taught by Diogo Alves de Resende.
 
 Every model in the course has a notebook here.
 
@@ -251,4 +251,4 @@ The video course, slides and narration are not covered by this license and remai
 
 ⭐ If this repo saved you time, star it. It helps other people find it.
 
-**[Take the full course →](https://www.udemy.com/course/forecasting-python/)**
+**[Take the full course →](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**

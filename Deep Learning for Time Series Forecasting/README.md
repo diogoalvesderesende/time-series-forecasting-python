@@ -6,7 +6,7 @@ This is where covariates start to matter. Past covariates, future covariates, st
 
 **Turn the GPU on before you start.**
 
-Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)**.
+Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**.
 
 ## Sections
 

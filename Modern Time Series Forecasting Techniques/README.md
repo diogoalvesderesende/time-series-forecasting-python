@@ -4,7 +4,7 @@ Where most real business forecasting actually happens.
 
 Prophet is the model you will reach for when someone needs a number by Friday. Intermittent demand is the problem nobody warns you about until you hit it.
 
-Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)**.
+Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**.
 
 ## Sections
 

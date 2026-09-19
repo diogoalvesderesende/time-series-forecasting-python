@@ -40,4 +40,4 @@ This repo is the companion code for a course, so it is not a general-purpose lib
 
 Those belong in the Udemy Q&A, not here. You will get a faster answer, and other students see it.
 
-[Course Q&A](https://www.udemy.com/course/forecasting-python/)
+[Course Q&A](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)

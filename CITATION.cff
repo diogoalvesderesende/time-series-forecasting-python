@@ -11,7 +11,7 @@ authors:
     affiliation: The Data Hero
 repository-code: >-
   https://github.com/diogoalvesderesende/time-series-forecasting-python
-url: https://www.udemy.com/course/forecasting-python/
+url: https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A
 abstract: >-
   Companion notebooks for the Udemy course "Master Time Series Analysis and
   Forecasting with Python". Covers exponential smoothing and Holt-Winters,

@@ -4,7 +4,7 @@ The foundations.
 
 This is the part people want to skip. Do not skip it. Every strange result later in the course traces back to something in here: a wrong index, an unset frequency, a seasonality you did not check for.
 
-Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)**.
+Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**.
 
 ## Sections
 

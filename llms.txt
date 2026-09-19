@@ -34,7 +34,7 @@ License: MIT for the code and notebooks. The video course itself is separate.
 
 ## Links
 
-- [Full course on Udemy](https://www.udemy.com/course/forecasting-python/)
+- [Full course on Udemy](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)
 - [All courses by Diogo Alves de Resende](https://www.udemy.com/user/diogo-resende-2/)
 - [The Data Hero](https://thedatahero.com/)
 - [Newsletter](https://data-heroes-2.kit.com/)

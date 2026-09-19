@@ -4,7 +4,7 @@ The 2025 and 2026 material.
 
 Foundation models arrived in time series and changed what a baseline looks like. Chronos forecasts a series it has never seen, with no training. That is worth understanding before you spend two days tuning an LSTM.
 
-Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/)**.
+Part of **[Master Time Series Analysis and Forecasting with Python](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A)**.
 
 ## Sections
 
@@ -94,4 +94,4 @@ Full instructions in [SETUP.md](../SETUP.md).
 
 ## Done
 
-That is the course. If it was useful, [leave a review](https://www.udemy.com/course/forecasting-python/) and star this repo.
+That is the course. If it was useful, [leave a review](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A) and star this repo.
