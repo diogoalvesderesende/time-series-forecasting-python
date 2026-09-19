@@ -1,0 +1,108 @@
+{
+  "_comment": [
+    "Real 5-star reviews of the Udemy course, captured from Udemy's public reviews",
+    "API for course 4013524 (the same data the course page shows).",
+    "",
+    "Every 'quote' below is verbatim student wording. Where a longer review was",
+    "shortened for display, the omission is marked with an ellipsis; nothing has",
+    "been reworded, and 'full_length' records the length of the original review so",
+    "the amount trimmed is visible.",
+    "",
+    "Do not add entries here by hand. Reviews belong to the students who wrote",
+    "them, and an invented one would be a fabricated endorsement."
+  ],
+  "source": "https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A",
+  "captured": "2026-09-19",
+  "course_id": 4013524,
+  "totals": {
+    "rating": "4.3",
+    "rating_count": 1545,
+    "five_star_text_reviews": 139
+  },
+  "reviews": [
+    {
+      "name": "Fatih Cogen",
+      "date": "2025-10-28",
+      "rating": 5,
+      "full_length": 646,
+      "quote": "It was one of the best courses I've ever taken. The instructor is genuinely knowledgeable and deeply experienced in the field, with a rare talent for drawing you into the subject. Studying stops feeling like a chore and becomes a pleasure."
+    },
+    {
+      "name": "Zhengji Wang",
+      "date": "2025-05-19",
+      "rating": 5,
+      "full_length": 459,
+      "quote": "Honestly one of the best courses on Udemy. As a junior data scientist who has no experience in handling time-series data, this course basically covers everything I need to know to start working on project on my own. … I especially love the teaching style, because the instructor records every step of him doing the real coding, making mistakes, and correcting them."
+    },
+    {
+      "name": "Pawel Widawski",
+      "date": "2021-11-07",
+      "rating": 5,
+      "full_length": 466,
+      "quote": "It's one of the most practical trainings I did on udemy. … To be honest I don't know how would I cope with new responsibility I got at my work if this course didn't exist."
+    },
+    {
+      "name": "Luqman Rumaiz",
+      "date": "2023-06-08",
+      "rating": 5,
+      "full_length": 553,
+      "quote": "Instructor Diogo was able to break it down in a way that a beginner can understand, despite time series forecasting is a normally challenging ML concept. He has good communication skills and always made sure to go as far as explaining each parameter."
+    },
+    {
+      "name": "Dionysios Papadatos",
+      "date": "2025-07-29",
+      "rating": 5,
+      "full_length": 434,
+      "quote": "Diogo is an excellent instructor. … He explains everything to the last detail and also his way of interacting with the students and answering questions is very positive."
+    },
+    {
+      "name": "Ashish Patel",
+      "date": "2025-06-22",
+      "rating": 5,
+      "full_length": 356,
+      "quote": "I particularly appreciate the way code is written while clearly explaining the thought process, which makes it easier to follow and stay focused. Thank you for designing such a well-structured and thoughtful course."
+    },
+    {
+      "name": "Samresh Kumar Singh",
+      "date": "2026-01-17",
+      "rating": 5,
+      "full_length": 302,
+      "quote": "I'm thoroughly enjoying both the depth and the structure of this course. The content is thoughtfully designed, and the clarity in explanations really stands out."
+    },
+    {
+      "name": "Grant Isaacs",
+      "date": "2022-05-14",
+      "rating": 5,
+      "full_length": 358,
+      "quote": "Diogo's teaching style is right on track. It's quick, it's concise, and gets right to the point. It arms you with enough information to put into practice immediately."
+    },
+    {
+      "name": "Abhimanyu Trakroo",
+      "date": "2021-06-10",
+      "rating": 5,
+      "full_length": 403,
+      "quote": "It is amazing and refreshing to see how he manages to convey the essence of the topic and its practical implementation in programming, without making the lectures too long."
+    },
+    {
+      "name": "Mussa Charles",
+      "date": "2025-03-03",
+      "rating": 5,
+      "full_length": 830,
+      "quote": "Great course. I really liked the way you explained everything and provided a step-by-step walkthrough."
+    },
+    {
+      "name": "Charlie Gzz T",
+      "date": "2022-02-02",
+      "rating": 5,
+      "full_length": 557,
+      "quote": "The course … goes straight to the point. You code beside the tutor and in addition the code is well structured and delivered for your fast personal use."
+    },
+    {
+      "name": "Buhle Mzalisi",
+      "date": "2022-11-26",
+      "rating": 5,
+      "full_length": 419,
+      "quote": "The fundamental concepts are being explained in a simplified manner and the python code is understandable."
+    }
+  ]
+}

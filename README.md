@@ -41,6 +41,32 @@ But the *why* behind each line is in the videos.
 
 The course has been updated nine times since launch. Full log in [Update history](#update-history).
 
+## What students say
+
+Real reviews from Udemy. There are 139 more like these — [read them on the course page](https://www.udemy.com/course/forecasting-python/?referralCode=63045C9CC807EB1EBD9A).
+
+> ★★★★★ It was one of the best courses I've ever taken. The instructor is genuinely knowledgeable and deeply experienced in the field, with a rare talent for drawing you into the subject. Studying stops feeling like a chore and becomes a pleasure.
+>
+> — **Fatih Cogen**, October 2025
+
+> ★★★★★ Honestly one of the best courses on Udemy. As a junior data scientist who has no experience in handling time-series data, this course basically covers everything I need to know to start working on project on my own. … I especially love the teaching style, because the instructor records every step of him doing the real coding, making mistakes, and correcting them.
+>
+> — **Zhengji Wang**, May 2025
+
+> ★★★★★ It's one of the most practical trainings I did on udemy. … To be honest I don't know how would I cope with new responsibility I got at my work if this course didn't exist.
+>
+> — **Pawel Widawski**, November 2021
+
+> ★★★★★ Instructor Diogo was able to break it down in a way that a beginner can understand, despite time series forecasting is a normally challenging ML concept. He has good communication skills and always made sure to go as far as explaining each parameter.
+>
+> — **Luqman Rumaiz**, June 2023
+
+> ★★★★★ I particularly appreciate the way code is written while clearly explaining the thought process, which makes it easier to follow and stay focused. Thank you for designing such a well-structured and thoughtful course.
+>
+> — **Ashish Patel**, June 2025
+
+More on the [companion site](https://diogoalvesderesende.github.io/time-series-forecasting-python/#what-students-say). Quotes are verbatim; an ellipsis marks where a longer review was shortened. The full set is in [`data/reviews.json`](data/reviews.json).
+
 ## What you will build
 
 Every forecasting model in this repo, with the notebook that runs it.

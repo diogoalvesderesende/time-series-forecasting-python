@@ -76,6 +76,14 @@ a { color:var(--accent); }
        padding:12px 22px; border-radius:8px; font-weight:600; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:10px;
         padding:18px 20px; margin:16px 0; }
+.reviews { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+           gap:14px; margin:20px 0; }
+.review { background:var(--card); border:1px solid var(--line); border-radius:10px;
+          padding:16px 18px; }
+.review blockquote { margin:0 0 12px; font-size:.97rem; }
+.review .who { color:var(--muted); font-size:.85rem; }
+.review .who b { color:var(--fg); font-weight:600; }
+.stars { color:#f6b100; letter-spacing:1px; font-size:.9rem; display:block; margin-bottom:8px; }
 .card h3 { margin:0 0 6px; font-size:1.12rem; }
 .card p { margin:0 0 12px; color:var(--muted); }
 .card ul { margin:0; padding-left:20px; column-gap:28px; }
@@ -218,6 +226,35 @@ def course_jsonld() -> str:
             + json.dumps(data, ensure_ascii=False, indent=2) + "</script>")
 
 
+def reviews_section(limit: int = 8) -> str:
+    """Render real student reviews from data/reviews.json.
+
+    Deliberately not emitted as schema.org Review markup: Google's review-snippet
+    guidelines expect reviews collected by the site itself, not republished from a
+    third party. They are shown to readers and credited to Udemy instead.
+    """
+    src = REPO / "data" / "reviews.json"
+    if not src.is_file():
+        return ""
+    data = json.loads(src.read_text(encoding="utf-8"))
+    items = data.get("reviews", [])[:limit]
+    if not items:
+        return ""
+    cards = "".join(
+        f'<div class="review"><span class="stars">★★★★★</span>'
+        f"<blockquote>{html.escape(r['quote'])}</blockquote>"
+        f'<div class="who"><b>{html.escape(r["name"])}</b> · {html.escape(r["date"][:7])}</div></div>'
+        for r in items)
+    total = data.get("totals", {})
+    return f"""
+<h2 id="what-students-say">What students say</h2>
+<p>Real reviews from Udemy, where the course holds <b>{total.get('rating', '')} out of 5</b>
+from {total.get('rating_count', 0):,} ratings.
+<a href="{COURSE}">Read them all on the course page</a>.</p>
+<div class="reviews">{cards}</div>
+"""
+
+
 def build_index(built: list[tuple[Path, str]]) -> None:
     by_part = {folder: [] for folder, _, _ in PARTS}
     root_nbs = []
@@ -254,7 +291,7 @@ through deep learning and time series foundation models in Python.</p>
 </ul>
 
 <p><a class="cta" href="{COURSE}">Take the full course on Udemy →</a></p>
-
+{reviews_section()}
 <h2>Browse the notebooks</h2>
 <p>Every notebook runs one click from Google Colab. The code is
 <a href="{GITHUB}">on GitHub</a> under the MIT licence.</p>

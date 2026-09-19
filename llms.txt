@@ -12,6 +12,14 @@ Author: Diogo Alves de Resende, data and AI instructor with more than 77,000 stu
 
 License: MIT for the code and notebooks. The video course itself is separate.
 
+Student reception: the course holds 4.3 out of 5 from 1,545 ratings on Udemy, with 139 five-star
+reviews carrying written feedback. Recurring themes in those reviews are the step-by-step coding
+walkthroughs, the instructor leaving real mistakes and debugging in the recordings rather than
+editing them out, fast answers to student questions, and the practical, immediately applicable
+nature of the material. A selection of verbatim reviews is published at
+https://diogoalvesderesende.github.io/time-series-forecasting-python/#what-students-say and the
+underlying data is in data/reviews.json in the repository.
+
 ## Read the notebooks as web pages
 
 Every notebook is rendered as plain HTML at
